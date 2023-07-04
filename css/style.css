@@ -1,0 +1,50 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+.container {
+	margin-bottom: 100px;
+	width: 100%;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.todo-icons img {
+	cursor: pointer;
+	transition: all 500ms;
+}
+
+.todo-icons img:hover {
+	transform: scale(1.2);
+}
+
+.completed {
+	opacity: 0.5;
+}
+
+.modal-todo {
+	width: 100%;
+}
+
+.card {
+	z-index: 100;
+}
+
+.hidden {
+	display: none;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
+}
